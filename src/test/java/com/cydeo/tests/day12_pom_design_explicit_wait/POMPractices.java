@@ -14,7 +14,6 @@ public class POMPractices {
     public void setupMethod(){
         Driver.getDriver().get("https://library1.cydeo.com/");
         libraryLoginPage = new LibraryLoginPage();
-
     }
 
     @Test
@@ -33,7 +32,7 @@ public class POMPractices {
 
         Driver.closeDriver();
     }
-
+    //BREAK TIME: 2.05PM CST
     @Test
     public void invalid_email_format_error_message_test(){
         //TC #2: Invalid email format error message test

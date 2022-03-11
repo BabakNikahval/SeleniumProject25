@@ -18,6 +18,10 @@ public class DynamicLoad1Page {
     @FindBy(css = "div#loading")
     public WebElement loadingBar;
 
+    @FindBy(css = "#username")
+    public WebElement inputUsername;
 
+    @FindBy(css = "#pwd")
+    public WebElement inputPassword;
 
 }

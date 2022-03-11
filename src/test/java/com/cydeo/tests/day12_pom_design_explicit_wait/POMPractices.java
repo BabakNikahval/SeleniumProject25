@@ -13,6 +13,8 @@ public class POMPractices {
     @BeforeMethod
     public void setupMethod(){
         Driver.getDriver().get("https://library1.cydeo.com/");
+        libraryLoginPage = new LibraryLoginPage();
+
     }
 
     @Test
@@ -20,11 +22,8 @@ public class POMPractices {
         //TC #1: Required field error message test
         //1- Open a Chrome browser
         //2- Go to: https://library1.cydeo.com/
-
-
         //3- Do not enter any information
         //4- Click to “Sign in” button
-        libraryLoginPage = new LibraryLoginPage();
 
         libraryLoginPage.signInButton.click();
 
@@ -40,9 +39,7 @@ public class POMPractices {
         //TC #2: Invalid email format error message test
         //1- Open a Chrome browser
         //2- Go to: https://library1.cydeo.com/
-
         //3- Enter invalid email format
-        libraryLoginPage = new LibraryLoginPage();
 
         libraryLoginPage.inputUsername.sendKeys("somethingwrong");
 
@@ -61,10 +58,8 @@ public class POMPractices {
         //TC #3: Library negative login
         //1- Open a Chrome browser
         //2- Go to: https://library1.cydeo.com
-
-        libraryLoginPage = new LibraryLoginPage();
-
         //3- Enter incorrect username or incorrect password
+
         libraryLoginPage.inputUsername.sendKeys("wrong@username.com");
         libraryLoginPage.inputPassword.sendKeys("wrongpassword");
 

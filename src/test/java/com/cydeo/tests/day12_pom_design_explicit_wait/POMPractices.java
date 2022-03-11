@@ -47,6 +47,8 @@ public class POMPractices {
         //Expected: Please enter a valid email address.
         Assert.assertTrue(libraryLoginPage.enterValidEmailErrorMessage.isDisplayed());
 
+        Driver.closeDriver();
+
     }
 
 }

@@ -61,5 +61,6 @@ public class WebDriveWaitPractices {
         dynamicLoad1Page.submitButton.click();
 
         //8. Assert “Your password is invalid!” text is displayed.
+        Assert.assertTrue(dynamicLoad1Page.errorMessage.isDisplayed());
     }
 }

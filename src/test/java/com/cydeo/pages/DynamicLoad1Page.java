@@ -11,17 +11,24 @@ public class DynamicLoad1Page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     @FindBy(xpath = "//button[.='Start']")
     public WebElement startButton;
 
     @FindBy(css = "div#loading")
     public WebElement loadingBar;
 
+    //@FindBy(id = "username")
     @FindBy(css = "#username")
     public WebElement inputUsername;
 
     @FindBy(css = "#pwd")
     public WebElement inputPassword;
+
+    @FindBy(xpath = "//button[.='Submit']")
+    public WebElement submitButton;
+
+    @FindBy(css = "")
+    public WebElement errorMessage;
+
 
 }

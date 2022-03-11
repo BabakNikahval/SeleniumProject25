@@ -17,6 +17,8 @@ public class POMPractices {
         //4- Click to “Sign in” button
         LibraryLoginPage libraryLoginPage = new LibraryLoginPage();
 
+        libraryLoginPage.signInButton.click();
+
         //5- Verify expected error is displayed:
         //Expected: This field is required.
     }

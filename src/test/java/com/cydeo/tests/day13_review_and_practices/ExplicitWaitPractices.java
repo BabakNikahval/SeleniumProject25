@@ -8,12 +8,14 @@ public class ExplicitWaitPractices {
 
     @BeforeMethod
     public void setupMethod(){
+
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_controls");
     }
 
     @Test
     public void remove_button_test(){
         //3- Click to “Remove” button
+
         //4- Wait until “loading bar disappears”
         //5- Verify:
         //a. Checkbox is not displayed

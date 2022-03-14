@@ -54,6 +54,8 @@ public class ExplicitWaitPractices {
     @Test
     public void enable_button_test(){
         //3- Click to “Enable” button
+
+
         //4- Wait until “loading bar disappears”
         //5- Verify:
         //a. Input box is enabled.

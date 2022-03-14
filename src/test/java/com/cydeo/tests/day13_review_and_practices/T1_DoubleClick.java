@@ -25,6 +25,9 @@ public class T1_DoubleClick {
         System.out.println("doubleClickPage.textToDoubleClick.getAttribute(\"style\") = "
                 + doubleClickPage.textToDoubleClick.getAttribute("style"));
 
+        String actualStyleAttributeValue = doubleClickPage.textToDoubleClick.getAttribute("style");
+        String expectedInStyleAttribute = "red";
+
     }
 
 }

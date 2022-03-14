@@ -15,9 +15,16 @@ public class DynamicControlsPage {
     @FindBy(css = "form#checkbox-example > button")
     public WebElement removeButton;
 
-    //BREAK 11.06AM CST
+    @FindBy(css = "div#loading")
+    public WebElement loadingBar;
 
+    //@FindBy(css = "input[label='blah']")
+    @FindBy(css = "input[type='checkbox']")
+    public WebElement checkbox;
 
+    //@FindBy(xpath = "//p[@id='message']")
+    @FindBy(css = "p[id='message']")
+    public WebElement message;
 
 
 }
